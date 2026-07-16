@@ -63,6 +63,14 @@ nav{background:var(--c);position:sticky;top:0;z-index:100;border-bottom:2px soli
 .book-by{font-size:10px;color:var(--mu);font-family:'Cormorant Garamond',serif;font-style:italic}
 .book-badge{display:inline-block;background:var(--d);color:var(--c);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-top:10px}
 
+/* ── VIDEO ── */
+.video-demo{padding:56px 0 64px;background:var(--g);text-align:center;border-bottom:1px solid var(--bo)}
+.video-demo .sec-label{justify-content:center}
+.video-demo h2{font-size:clamp(24px,5vw,36px);font-weight:900;color:var(--c);margin-bottom:8px}
+.video-demo p.video-sub{color:var(--mu);max-width:520px;margin:0 auto 28px;font-size:15px}
+.video-wrap{max-width:720px;margin:0 auto;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:2px solid var(--d);background:var(--c)}
+.video-wrap video{width:100%;aspect-ratio:16/9;display:block;background:var(--c)}
+
 /* ── DOLOR ── */
 .dolor{background:var(--c);padding:60px 0;border-top:1px solid var(--c3)}
 .dolor-inner{display:grid;grid-template-columns:1fr 1fr;gap:32px}
@@ -230,6 +238,21 @@ footer a:hover{text-decoration:underline}
           <div class="book-badge">Ebook digital</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-demo">
+  <div class="bc">
+    <p class="sec-label">Video de presentación</p>
+    <h2>Mira cómo funciona antes de decidir</h2>
+    <p class="video-sub">Un vistazo rápido a la fórmula y a lo que vas a aprender en el ebook.</p>
+    <div class="video-wrap">
+      <video controls preload="metadata" playsinline>
+        <source src="n1_ebook_video_subs.mp4" type="video/mp4"/>
+        Tu navegador no soporta la reproducción de video. <a href="n1_ebook_video_subs.mp4">Descárgalo aquí</a>.
+      </video>
     </div>
   </div>
 </section>
